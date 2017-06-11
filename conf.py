@@ -79,6 +79,8 @@ pygments_style = 'sphinx'
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
 
+numfig = True
+
 
 # -- Options for HTML output ----------------------------------------------
 
@@ -122,7 +124,7 @@ latex_elements = {
 
     # Latex figure (float) alignment
     #
-    # 'figure_align': 'htbp',
+    'figure_align': 'H',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
