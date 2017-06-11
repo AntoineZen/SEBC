@@ -13,6 +13,7 @@ SEBC - Low power file systems
    flash_memory
    flash_fs
    optimizations
+   conclusion
 
 
 
