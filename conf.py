@@ -48,7 +48,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'SEBC - Système de fichier basse consommation'
+project = 'SEBC - Low power file systems'
 copyright = '2017, Antoine Zen-Ruffinen'
 author = 'Antoine Zen-Ruffinen'
 
@@ -131,7 +131,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SEBC-Systmedefichierbasseconsommation.tex', 'SEBC - Low power file systems',
+    (master_doc, 'SEBC-Low_power_file_systems.tex', 'SEBC - Low power file systems',
      'Antoine Zen-Ruffinen', 'manual'),
 ]
 
