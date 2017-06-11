@@ -66,7 +66,7 @@ release = '1.0'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'fr'
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -129,7 +129,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'SEBC-Systmedefichierbasseconsommation.tex', 'SEBC - Système de fichier basse consommation Documentation',
+    (master_doc, 'SEBC-Systmedefichierbasseconsommation.tex', 'SEBC - Low power file systems',
      'Antoine Zen-Ruffinen', 'manual'),
 ]
 
@@ -139,7 +139,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sebc-systmedefichierbasseconsommation', 'SEBC - Système de fichier basse consommation Documentation',
+    (master_doc, 'sebc-systmedefichierbasseconsommation', 'SEBC - Low power file systems',
      [author], 1)
 ]
 
@@ -150,7 +150,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'SEBC-Systmedefichierbasseconsommation', 'SEBC - Système de fichier basse consommation Documentation',
+    (master_doc, 'SEBC-Systmedefichierbasseconsommation', 'SEBC - Low power file systemsn',
      author, 'SEBC-Systmedefichierbasseconsommation', 'One line description of project.',
      'Miscellaneous'),
 ]
