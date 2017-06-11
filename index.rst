@@ -3,16 +3,16 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SEBC - Système de fichier basse consommation's documentation!
-========================================================================
-
+SEBC - Low power file systems
+=============================
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+   introduction
    flash_memory
    flash_fs
-   optimisations
+   optimizations
 
 
 
