@@ -15,6 +15,7 @@ So when using an traditional file-system on flash-memory, a special layer called
 
 .. _flt_principle:
 .. figure:: figures/FTL_-_principle.png
+	:scale: 35%
 
 	FTL principle
 
@@ -25,6 +26,7 @@ The article [HW-FTL]_ shows the comparison of a prototype hardware FTL called "P
 
 .. _ftl_comp:
 .. figure:: figures/FTL_-_read-write_energy.png
+	:scale: 35%
 
 	Software FTL vs Hardware FTL energy consumption comparison.
 
@@ -39,18 +41,21 @@ In the article, the authors measure the energy measured by various system calls 
 
 .. _cpu_energy_by_syscall:
 .. figure:: figures/FS_opt_-_CPU_energy_by_syscal.png
+	:scale: 35%
 
 	Energy consumed by the CPU by syscall.
 
 
 .. _ext3_flash_energy_by_syscall:
 .. figure:: figures/FS_opt_-_EXT3_flash_energy_by_syscall.png
+	:scale: 35%
 
 	Ext3: flash energy consumed b by syscall
 
 
 .. _jffs_flash_energy_by_syscall:
 .. figure:: figures/FS_opt_-_JFFS_flash_energy_by_syscall.png
+	:scale: 35%
 
 	JFFS: flash energy consumed b by syscall
 
@@ -62,11 +67,13 @@ The result of those measurement can be seen in :numref:`fs_cpu_energy_by_size` a
 
 .. _fs_cpu_energy_by_size:
 .. figure:: figures/FS_opt_-__CPU_energy.png
+	:scale: 35%
 
 	Ext3 and JFFS CPU energy vs write size.
 
 .. _fs_flashenergy_by_size:
 .. figure:: figures/FS_opt_-_flash_write_energy.png
+	:scale: 35%
 
 	Ext3 and JFFS CPU energy vs write size.
 
@@ -87,6 +94,7 @@ The article then make a measurement of the performance of various compression op
 
 .. _file_traces:
 .. figure:: figures/Comp_opt_by_prediction_-_file_traces.png
+	:scale: 35%
 
 	File trace used to test the compression prediction algorithms
 
@@ -99,10 +107,11 @@ The tested algorithm are the following:
 :F MCKP: The proposed prediction algorithm.
 :Oracle F MCKP: This is not a real algorithm. This solution knows is advance the future use of each files and follow the best possible solution, that has been pre-calculated by knowing the file-traces.
 
-For each file trace and for each algorithm, the access time has been measured. The result of this measurement is shown in :numref:`_comp_opt_by_prediction_access_time`.
+For each file trace and for each algorithm, the access time has been measured. The result of this measurement is shown in :numref:`comp_opt_by_prediction_access_time`.
 
 .. _comp_opt_by_prediction_access_time:
 .. figure:: figures/Comp_ot_by_prediction_-_Access_times_.png
+	:scale: 35%
 
 	File trace used to test the compression prediction algorithms
 
@@ -112,6 +121,7 @@ The :numref:`comp_opt_by_prediction_resluts` shows how the different techniques 
 
 .. _comp_opt_by_prediction_resluts:
 .. figure:: figures/Comp_opt_by_prediction_-_results.png
+	:scale: 35%
 
 	File trace used to test the compression prediction algorithms
 
@@ -120,10 +130,11 @@ It this plot, the energy is represented normalized to the energy consumed by the
 Compression optimization on the fly
 -----------------------------------
 
-The scientific paper [Comp2]_ offers another postulate to optimize when the compression should be done by the file-system and when not: Certain files are already compressed by the application, like MPEG, JPEG, MP3 or PDF. Compressing those files again will be a waist of time, because it will lead to poor compression ratio as they are already compressed (by definition of the file format.) The :numref:`comp_ratio_by_type` show that compression ratio is obtained for different file types.
+The scientific paper [Comp2]_ offers another postulate to optimize when the compression should be used by the file-system and when not: Certain files are already compressed by the application, like MPEG, JPEG, MP3 or PDF. Compressing those files again will be a waist of time, because it will lead to poor compression ratio as they are already compressed (by definition of the file format.) The :numref:`comp_ratio_by_type` show that compression ratio is obtained for different file types.
 
 .. _comp_ratio_by_type:
 .. figure:: figures/Comp_ot_on_the_fly_-_comp_ratio_by_type.png
+	:scale: 35%
 
 	Compression ratio obtained on different file types.
 
@@ -148,12 +159,13 @@ The energy consumed by the modified JFFS2 file-system optimized with the algorit
 
 .. _comp_opt_on_the_fly_result:
 .. figure:: figures/Comp_opt_on_the_fly_-_results.png
+	:scale: 35%
 
 	Energy consumed with or without proposed algorithm.
 
 This figure shows that the algorithm save energy with all multimedia file. On the text file, the consumed energy is the same as the compression will not be discarded. The energy saved is the energy that would be consumed by the compression. One can see that the save are bigger on write that on read. This measurement take into account only the enrgy consumed by the file-system and the flash chip, not the whole system.
 
-The paper propose a second optimization that can be done using the same criteria.
+The paper propose a second optimization that can be done using the same criteria and it will be treated in the next section.
 
 Optimization of the page cache
 ------------------------------
@@ -174,6 +186,7 @@ The :numref:`cache_opt_op_energy` show the energy taken by each operation:
 
 .. _cache_opt_op_energy:
 .. figure:: figures/Page_cache_opt_-_Op_energy.png
+	:scale: 35%
 
 	Energy consumed by operations
 
@@ -184,6 +197,7 @@ The :numref:`cache_opt_mm_result` show the gain realized when reading various mu
 
 .. _cache_opt_mm_result:
 .. figure:: figures/Page_cache_opt_-_mm_playback.png
+	:scale: 35%
 
 	Page cache optimization results on multimedia files
 

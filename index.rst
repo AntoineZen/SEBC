@@ -10,8 +10,7 @@ SEBC - Low power file systems
    :caption: Contents:
 
    introduction
-   flash_memory
-   flash_fs
+   background
    optimizations
    conclusion
 
